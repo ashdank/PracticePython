@@ -9,14 +9,17 @@ number = random.randint(1,9)
 guess = 0
 count = 0
 
-while guess != number:
+while True:
     guess = int(input("Guess a number: "))
     count = count + 1
 
     if number > guess:
         print "Too low"
+        continue
     elif number < guess:
         print "Too high"
+        continue
     else:
         print "You got it"
         print "You got it in", count, "tries"
+        break
