@@ -24,6 +24,8 @@ def game(a,b):
             print "player 1 won, congratulations"
         elif b == "P" and a == "R":
             print "player 2 won, congratulations"
+        else:
+            print "INVALID INPUT"
 
 while True:
     x = raw_input("Would you like to start a new game? (Y/N)" )
@@ -33,3 +35,4 @@ while True:
         game(a,b)
     else:
         print ("Thanks, next time")
+        break
