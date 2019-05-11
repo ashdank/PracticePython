@@ -6,4 +6,6 @@ string = raw_input("Enter a word/phrase: ")
 string_2 = string[::-1]
 
 if string == string_2:
-    print ("This is a palindrome")
+    print "This is a palindrome"
+else:
+    print "Not a palindrome"
