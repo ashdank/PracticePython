@@ -13,22 +13,23 @@ def game(a,b):
         print "draw"
     else:
         if a == "R" and b == "S":
-            print "player 1 won"
+            print "player 1 won, congratulations"
         elif b == "R" and a == "S":
-            print "player 2 won"
+            print "player 2 won, congratulations"
         elif a == "S" and b == "P":
-            print "Player 1 won"
+            print "Player 1 won, congratulations"
         elif b == "S" and a == "P":
-            print "Player 2 won"
+            print "Player 2 won, congratulations"
         elif a == "P" and b == "R":
-            print "player 1 won"
+            print "player 1 won, congratulations"
         elif b == "P" and a == "R":
-            print "player 2 won"
+            print "player 2 won, congratulations"
 
-x = raw_input("Would you like to start a new game? (Y/N)" )
-if x == "Y":
-    a = raw_input("Player 1: R,P,S? ")
-    b = raw_input("Player 2: R,P,S? ")
-    game(a,b)
-else:
-    print ("Thanks, next time")
+while True:
+    x = raw_input("Would you like to start a new game? (Y/N)" )
+    if x == "Y":
+        a = raw_input("Player 1: R,P,S? ")
+        b = raw_input("Player 2: R,P,S? ")
+        game(a,b)
+    else:
+        print ("Thanks, next time")
