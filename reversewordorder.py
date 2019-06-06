@@ -9,6 +9,8 @@ shown back to me.'''
 
 string = raw_input("Enter a sentence: ")
 a = string.split(" ")
+print a
 b = a[::-1]
+print b
 c = ' '.join(b)
 print c
