@@ -34,6 +34,8 @@ class Pets:
     def __init__(self, dogs):
         self.dogs = dogs
 
+
+# Parent class
 class Dog:
 
     # Class attribute
@@ -64,22 +66,18 @@ class RussellTerrier(Dog):
 
 
 # Child class (inherits from Dog class)
-class Labrador(Dog):
+class Bulldog(Dog):
     def run(self, speed):
         return "%s runs %s" % (self.name, speed)
 
 # Create instances of dogs
 my_dogs = [
-    Labrador("Tom", 6),
+    Bulldog("Tom", 6),
     RussellTerrier("Fletcher", 7),
     Dog("Larry", 9)
 ]
 
-my_pets = Pets(my_dogs)
-
-# Output
-print("I have {} dogs.".format(len(my_pets.dogs)))
-for dog in my_pets.dogs:
+print("I have {} dogs".format(len(my_dogs)))
+for dog in my_dogs:
     print("{} is {}.".format(dog.name, dog.age))
-
 print("And they're all {}s, of course.".format(dog.species))
